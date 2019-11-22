@@ -1,0 +1,144 @@
+tag <HTML>
+bagian <head>
+ - judul halaman = <title></title>
+ - CSS = <style></style>
+ - Javascript = <script></script>
+ - metadata = <meta></meta>
+metada ini untuk mendeskripsikan website
+meta charset = untuk encoding
+meta name "description" = deskripsi website kita
+meta name "keywords" 
+meta name "author"
+
+bagian <body>
+-teks 
+ <h1>, <h2>, <h3>, <h4>, <h5>, <h6> // tag ini adalah headding
+- pendukung teks 
+ <br>//baris baru, <hr>//garis horizontal, <em>,<strong> ....
+- gambar 
+ <img>
+-hyperlink
+ <a>
+- list(bullets & numbering)
+ <ul>// list tidak terurut, <ol>// order list, <li>, <dl>//definition list, <dt>,<dd>
+- tabel
+ <table>, <thead>, <tbody>, ...
+- form
+ <form>, <input>, <select>, <button>, ...
+- script
+ <script>
+- object
+ <object>
+- grouping
+ <div>, <span>
+- komentar
+<!-- ini adalah komentar. -->
+struktur tag
+<namatag attribut="nilai">
+//example
+<body bgcolor="lightblue">
+<body bgcolor="lightblue" id="myid" class="myclass">
+
+atribut global
+- accesskey = fungsinya untuk menentukan elemen ini bisa diakses menggunakan keyboard
+- class = 1 elemen bisa kita kasih apa
+- id
+- dir = untuk menentukan arah tulisan nya direction
+- lang = untuk language
+- style = untuk menyisipkan in line css
+- tabindex = untuk menentukan urutan form
+- title = untuk memberi judul pada sebuah elemen
+
+<b></b> = bold 
+<i></i> = text italic
+<u></u> = text underline
+<strong></strong> = untuk penekanan yg lebih kuat lagi // untuk membuat teks lebih tebal
+<em></em> = penekanan digunakan untuk memberikan penekanan pada sebuah teks // untuk membuat teks miring atau sperti italic
+
+<ol type=""></ol> //untuk mengubah list menjadi alphabet
+
+hyperlink adalah sebuah koneksi dari sebuah sumber web dari sumber lain
+link pada html dibuat digunakan <a></a> //anchor
+
+untuk memberi external link
+<a href=""></a> // isi sebuah link dalam string, wajib menggunakan full link!
+
+untuk memberi internal link 
+<a href=""></a> // isi sebuah file yg kita punya
+
+relative url 
+<a href=""></> // jika berbeda 1 folder gunakan 'namafile/namafile'
+// jika berbeda diatas 1 folder gunakan ../namafile
+
+page anchor 
+
+id="name" di dalam h2 sebagai penanda
+# digunakan untuk menuju ke link pada suatu tempat
+
+<a target="name"></a>
+_self = untuk membuka link di halaman yang sama 
+_blank = untuk membuka link di tab baru
+_parent = 
+_top = 
+
+image 
+<img src="">
+internal resource 
+logo.png, background.jpg
+
+external resource 
+<img src="">
+menggunakan link yang ada di google
+
+<img>
+- src = source gambar
+- alt = alternative jika gambar tidak bisa di load, maka yg muncul tulisan yg diketik disini
+- title = memberikan title jika cursor kita ada di gambar tersebut
+- width = mengatur kelebaran gambar // jika angka saja satuan pixel
+- height = mengatur tinggi gambar // satuan pixel
+
+//example for table
+
+<table>
+	<tr>
+		<td>baris 1, kolom 1</td>
+		<td>baris 1, kolom 2</td>
+	</tr>
+	<tr>
+		<td>baris 1, kolom 1</td>
+		<td>baris 1, kolom 2</td>
+	</tr>
+	.....
+</table>
+
+//example for table complex
+
+<table>
+        <thead> //table head
+            <tr> //table row
+                <th></th> //table headder
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </tr>
+        </thead>
+        <tbody> //table body
+            <tr>
+                <th>Baris 1</th>
+                <td>Baris 1, Kolom 1</td>
+                <td>Baris 1, Kolom 2</td>
+            </tr>
+            <tr>
+                <th>Baris 2</th>
+                <td>Baris 2, Kolom 1</td>
+                <td>Baris 2, Kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+atribut dalam table
+<table></table>
+- border // gunakan css !
+- cellspacing //gunakan css !
+- cellpadding //gunakan css !
+- colspan
+- rowspan
